@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bfcache</title>
+  <link rel="stylesheet" href="//unpkg.com/bulma">
+</head>
+<body>
+  <p>CSS with <code>Cache-Control: no-cache, no-store, must-revalidate</code> <span id="css-not-cached"></span></p>
+  <p>CSS without <code>Cache-Control</code> <span id="css-cached"></span></p>
+  <p>JS with <code>Cache-Control: no-cache, no-store, must-revalidate</code> <span id="js-not-cached"></span></p>
+  <p>JS without <code>Cache-Control</code> <span id="js-cached"></span></p>
+  <a href="next.html">Go to the next page.</a>
+  <link rel="stylesheet" href="/api/not-cached.css">
+  <link rel="stylesheet" href="/api/cached.css">
+  <script src="/api/not-cached.js"></script>
+  <script src="/api/cached.js"></script>
+</body>
+</html>
